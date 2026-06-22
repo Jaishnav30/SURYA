@@ -1,0 +1,12 @@
+
+z-index: (negative,0,positive)
+- for moving elements front/back of other
+- by default increases downwards in html
+
+background-image: url()
+background-size: cover/contain/auto - to fit the image into that element
+
+FLEX BOX
+must be written inside a main container which has many items in it
+display: flex;
+flex-direction: row/row-reverse/column/column-reverse
