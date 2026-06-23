@@ -3,7 +3,7 @@ function add(a: number, b: number): number;
 function add(a: string, b: string): string;
 
 // Function implementation
-function add(a: any, b: any): any {
+function add(a, b) {
   return a + b;
 }
 

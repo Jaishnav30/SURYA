@@ -8,4 +8,4 @@ function greet(name: string, greeting: string | undefined = undefined): string {
   }
 }
 
-greet("Alice", undefined); // Output: Hello, Alice!
+greet("Alice"); // Output: Hello, Alice!
