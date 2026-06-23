@@ -19,4 +19,7 @@ function logPersonName(person: Person): void {
   return console.log(person.name);
 }
 
+const emp: Employee = {name: "jai", age:21, employeeId:95};
+logPersonName(emp);
+
 // Question 2: Comment out the age property on Employee. What happens?

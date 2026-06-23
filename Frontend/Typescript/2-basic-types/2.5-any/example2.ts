@@ -1,7 +1,7 @@
 // I can declare a function that accepts any type:
-function logValue(value: any) {
-  console.log(value);
+function print(...value: any) {
+  console.log(...value);
 }
 
-logValue(42);
-logValue("Hello, TypeScript!");
+print(42);
+print(1,2,3,4, "hi", 8.876, true);

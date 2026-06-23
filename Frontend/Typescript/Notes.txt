@@ -1,0 +1,52 @@
+let or var are assigned types based on their first initialization
+const assignment's type is always the value or in simple, const assigned value can NOT be changed
+any type can be used when wanting any datatype to be assigned (using it is a BAD practice)
+readonly keyword used before properties to make it immutable. also we can use:
+const point = { x: 10, y: 20 } as const; to make all properties immutable at once
+________________________________________________________________________________________________________________________________________
+
+Array declaration:
+
+const arr_name: datatype[] = [...];
+const arr_name: Array<datatype> = [...];
+
+"..." is used to expand or "unpack" elements of an iterable (like an array, string, or object) into individual values
+ex: 
+type CarAndSkyColors = [...CarColors, ...SkyColors];
+// ^ = type Colors = ["red", "orange", "gray", "blue"]
+________________________________________________________________________________________________________________________________________
+
+Tuple declaration:
+
+const tup_name: [type1, type2, ...] = [...];
+________________________________________________________________________________________________________________________________________
+
+Object literal declaration:
+
+const user = { name: "val" };
+accessed by just user.name;
+
+interface/type= declaration: 
+
+interface/type= user {
+    name:type;
+    ...
+}
+const some_name: user = { name: "val" };
+________________________________________________________________________________________________________________________________________
+
+Type definitions:
+
+type arr = ["ele1","ele2"];
+type mult_type = number | string | booloean | null | undefined;
+type = user {name:type};
+type = a | b; - union
+type = a & b; - intersection
+a and b can be any types - string, number, null, array, object, etc.
+
+? - means optional, used in types and objects to make a field optional
+________________________________________________________________________________________________________________________________________
+
+Record : same as unordered_map of c++
+type name = Record<type1, type2>;
+
