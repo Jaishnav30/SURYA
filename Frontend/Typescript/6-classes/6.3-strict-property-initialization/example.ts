@@ -6,9 +6,9 @@ class Person {
 
   // Comment this out to see the strictPropertyInitialization error:
   // Or, can initialize the `age` field above via default value
-  constructor(name: string, age: number) {
+  constructor(name: string, age:number) {
     this.name = name;
-    this.age = age;
+    this.age=age
   }
 
   greet() {

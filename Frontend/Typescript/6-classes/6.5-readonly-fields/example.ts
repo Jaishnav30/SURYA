@@ -1,7 +1,7 @@
 // Fields can be `readonly` to prevent them from being modified after initialization.
 class Person {
   name: string;
-  readonly age: number;
+  readonly age: number; //can be changed only in constructor
 
   constructor(name: string, age: number) {
     this.name = name;

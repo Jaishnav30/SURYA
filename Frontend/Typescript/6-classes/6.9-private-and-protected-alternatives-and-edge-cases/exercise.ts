@@ -8,9 +8,19 @@
 class Student {
   private studentId = 1;
 }
+console.log(new Student["studentId"]);
 
 // Question 2:
 // Create a class `Teacher` with a *JavaScript* private field `teacherId` and a method `getTeacherId`
 // that returns the `teacherId`.
 // Instantiate the class and call the `getTeacherId` method to log the `teacherId`.
 // Note that teacherId is private, and can't be accessed directly.
+class Teacher{
+  #teacherId
+  get getTeacherId(){
+    return this.#teacherId;
+  }
+}
+const t = new Teacher();
+t.getTeacherId();
+// t.#teacherId;

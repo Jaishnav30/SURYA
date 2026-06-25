@@ -1,7 +1,7 @@
 // Exercise 1: Make the title field readonly.
 
 class Book {
-  title: string;
+  readonly title: string;
 
   constructor(title: string) {
     this.title = title;
@@ -11,3 +11,5 @@ class Book {
 // Exercise 2: Attempt to modify a readonly field
 // Create an instance of the `Book` class and try to modify the `title` field.
 // What error do you get?
+const book = new Book("abc");
+//book.title="not possible";

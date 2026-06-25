@@ -5,7 +5,7 @@ class Base {
 }
 
 class Derived extends Base {
-  a = 2; // No modifier, so public
+  a=1; // No modifier, so public
 }
 
 const d = new Derived();

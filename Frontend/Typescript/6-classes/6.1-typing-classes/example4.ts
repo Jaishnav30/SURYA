@@ -20,7 +20,7 @@ class Employee extends Person {
   jobTitle: string;
 
   constructor(name: string, age: number, jobTitle: string) {
-    super(name, age); // Compile error without this
+    super(name, age); // inherited classes must contain super()
     this.jobTitle = jobTitle;
   }
 }
