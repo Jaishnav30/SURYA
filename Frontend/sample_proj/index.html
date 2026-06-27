@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeStore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">👟ShoeStore</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="login-button">Login</button>
+        </nav>
+    </header>
+    <main>
+        <div class="main-sec">
+            <section class="hero-content">
+                <h4 class="tag-line">Step Up Your Game</h4>
+                <h1>Find Your Perfect Shoes</h1>
+                <p>Premium sneakers for every occasion</p>
+                <p class="tag-line-2">Comfort. Style. Performance</p>
+                <div class="hero-actions">
+                    <button class="shop-now-button">Shop Now</button>
+                    <button class="learn-more-button">Learn More</button>
+                </div>
+            </section>
+            <section class="hero-img">
+                <img src="shoe.jpg" alt="red running shoe" class="shoe-pic">
+            </section>
+        </div>
+    </main>
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-section">
+            <article class="cat-box">
+                <p class="cat-name">Running</p> 
+                <p class="item-number">32 items</p>
+            </article>
+            <article class="cat-box">
+                <p class="cat-name">Casual</p> 
+                <p class="item-number">45 items</p>
+            </article>
+            <article class="cat-box">
+                <p class="cat-name">Sports</p> 
+                <p class="item-number">28 items</p>
+            </article>
+            <article class="cat-box">
+                <p class="cat-name">Formal</p> 
+                <p class="item-number">16 items</p>
+            </article>
+        </div>
+    </section>
+    <section class="featured">
+        <h2>Featured Products</h2>
+        <div class="featured-section">
+            <article class="featured-product">
+                <img src="fp1.jpg" alt="Nike Air Zoom Pegasus 39">
+                <h3 class="featured-product-name">Nike Air Zoom Pegasus 39</h3> 
+                <p class="item-number"></p>
+                <p class="featured-review">⭐4.8 (128 reviews)</p>
+                <p class="featured-cost">₹6,999</p>
+                <button class="featured-ATC">Add to Cart</button>
+            </article>
+            <article class="featured-product">
+                <img src="fp2.jpg" alt="Adidas Ultraboost 22">
+                <h3 class="featured-product-name">Adidas Ultraboost 22</h3> 
+                <p class="item-number"></p>
+                <p class="featured-review">⭐4.6 (196 reviews)</p>
+                <p class="featured-cost">₹5,499</p>
+                <button class="featured-ATC">Add to Cart</button>
+            </article>
+            <article class="featured-product">
+                <img src="fp3.jpg" alt="Puma RS-X Reinvention">
+                <h3 class="featured-product-name">Puma RS-X Reinvention</h3> 
+                <p class="item-number"></p>
+                <p class="featured-review">⭐4.7 (76 reviews)</p>
+                <p class="featured-cost">₹4,999</p>
+                <button class="featured-ATC">Add to Cart</button>
+            </article>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials-section">
+            <article class="testimonial-card">
+                <p class="testi-mssg">Amazing quality and super comfortable</p>
+                <h4>Rohit Sharma</h4>
+                <p class="testi-rating">⭐⭐⭐⭐⭐</p>
+            </article>
+            <article class="testimonial-card">
+                <p class="testi-mssg">Worth every rupee!</p>
+                <h4>Priya Verma</h4>
+                <p class="testi-rating">⭐⭐⭐⭐</p>
+            </article>
+            <article class="testimonial-card">
+                <p class="testi-mssg">Great collection and genuine products</p>
+                <h4>Ankit Singh</h4>
+                <p class="testi-rating">⭐⭐⭐⭐</p>
+            </article>
+            <!--to add more-->
+        </div>
+    </section>
+    <section class="stats">
+        <div class="stats-section">
+            <article class="stat-card">
+                <p class="stats-desc-main">15,000+</p>
+                <p class="stats-desc">happy Customers</p>
+            </article>
+            <article class="stat-card">
+                <p class="stats-desc-main">500+</p>
+                <p class="stats-desc">products</p>
+            </article>
+            <article class="stat-card">
+                <p class="stats-desc-main">4.8</p>
+                <p class="stats-desc">average rating</p>
+            </article>
+            <article class="stat-card">
+                <p class="stats-desc-main">Best Prices</p>
+                <p class="stats-desc">Guranteed</p>
+            </article>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Get In Touch</h2>
+        <section class="contact-form-section">
+            <form action="/submit" method="POST" >
+                <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section class="conact-details-section">
+            <ul>
+                <li class="contact-details">+91 98765 43210</li>
+                <li class="contact-details">support@shoestore.com</li>
+                <li class="contact-details">123, Sneaker Street, Bengaluru, India</li>
+            </ul>
+            <!-- icons later on -->
+        </section>
+    </section>
+    <footer class="footer">
+    <div class="footer-section">
+        <h3>👟 ShoeStore</h3>
+        <p>Premium sneakers for every occasion.</p>
+    </div>
+
+    <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-section">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Running</a></li>
+            <li><a href="#">Casual</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Formal</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-section">
+        <h3>Follow Us</h3>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">X (Twitter)</a></li>
+            <li><a href="#">YouTube</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
